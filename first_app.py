@@ -49,19 +49,18 @@ df = pd.DataFrame({
 df
 
 
+# for idx, item in enumerate(r.json()["events"]):
 
-for idx, item in enumerate(r.json()["events"]):
-
-  row_items = [] 
-  row_items.append(item["title"])
-  row_items.append(item["started_at"])
-  row_items.append(item["accepted"])
+#   row_items = [] 
+#   row_items.append(item["title"])
+#   row_items.append(item["started_at"])
+#   row_items.append(item["accepted"])
   
 
-  if idx == 0:
-    df = pd.DataFrame(row_items, columns = ['タイトル' , '開催日', '参加者数'])
-    continue
+#   if idx == 0:
+#     df = pd.DataFrame(row_items, columns = ['タイトル' , '開催日', '参加者数'])
+#     continue
 
-#   df.loc[idx] = row_items
+# #   df.loc[idx] = row_items
 
-# df
+# # df
